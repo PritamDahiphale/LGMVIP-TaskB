@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    </head>
+    <title>LGM Task2</title>
+    <body>
+        <div id="loader" class="center"></div>
+
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F880%2F0*H3jZONKqRuAAeHnG.jpg&imgrefurl=https%3A%2F%2Fmedium.com%2F%40dhilipkmr%2Fthe-loading-shimmer-f7129ac41894&tbnid=6ZnUB-og_GUq2M&vet=12ahUKEwjyof6v7tXzAhVesksFHX6EBUsQMygAegUIARDXAQ..i&docid=SZvnlFTCA1j4lM&w=880&h=464&q=loading&ved=2ahUKEwjyof6v7tXzAhVesksFHX6EBUsQMygAegUIARDXAQ"
+             alt="" />
+        <script>
+            document.onreadystatechange = function() {
+                if (document.readyState !== "complete") {
+                    document.querySelector(
+                      "body").style.visibility = "hidden";
+                    document.querySelector(
+                      "#loader").style.visibility = "visible";
+                } else {
+                    document.querySelector(
+                      "#loader").style.display = "none";
+                    document.querySelector(
+                      "body").style.visibility = "visible";
+                }
+            };
+        </script>
+     <div class="container">
+         <div class="header">
+
+         <div align="right" class="btn"><button id="getdata" align ="center" onclick="getData()">GET USER</button></div>
+
+            </div>
+            <div id="data">
+                <div class="table">
+                <table width="100%"height="550px">
+                    <tr align="center" >
+                        <td><img src=""  id="p1img"></td>
+                        <td><img src=""  id="p2img"></td>
+                        <td><img src=""  id="p3img"></td>
+                    </tr>
+                    <tr>
+
+                        <td  align="center" id="name1"></td>
+                        <td  align="center" id="name2"></td>
+                        <td  align="center" id="name3"></td>
+                    </tr>
+                    <tr>
+
+                        <td  align="center" id="mail1"></td>
+                        <td  align="center" id="mail2"></td>
+                        <td  align="center" id="mail3"></td>
+                    </tr>
+                    <tr align="center">
+                        <td><img src=""  id="p4img"></td>
+                        <td><img src=""  id="p5img"></td>
+                        <td><img src=""  id="p6img"></td>
+                    </tr>
+                    <tr>
+
+                        <td  align="center" id="name4"></td>
+                        <td  align="center" id="name5"></td>
+                        <td  align="center" id="name6"></td>
+                    </tr>
+                    <tr>
+
+                        <td  align="center" id="mail4"></td>
+                        <td  align="center" id="mail5"></td>
+                        <td  align="center" id="mail6"></td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+    </div>
+    <script src="script.js">
+    </script>
+    </body>
+</html>
